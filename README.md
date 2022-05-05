@@ -24,11 +24,11 @@
         
         A) View your cluster's OIDC provider URL.
           
-          aws eks describe-cluster --name hive-dev-eksctl --query "cluster.identity.oidc.issuer" --output text
+          aws eks describe-cluster --name hive-prod --query "cluster.identity.oidc.issuer" --output text
           
           Example output:
           
-          https://oidc.eks.region-code.amazonaws.com/id/EXAMPLED539D4633E53DE1B716D3041E
+         https://oidc.eks.us-east-1.amazonaws.com/id/7A899DB907EDBE036CE17A894B740C1F
           
         B) Create the IAM role.
         
